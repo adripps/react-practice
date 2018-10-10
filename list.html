@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>React Practice</title>
+  </head>
+  <body>
+
+    <div id="reactPractice"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+
+    <script type="text/babel">
+       class List extends React.Component {
+         render() {
+           return (
+             <div>
+               <h1>Helpful Git Links</h1>
+		<li><a href="https://guides.github.com/activities/hello-world/">Basic GitHub Guide</a></li>
+		<li><a href="https://www.bloc.io/resources/git-checkpoint-workflow#after-each-assignment">Bloc's Checkpoint Workflow for Git</a></li>
+		<li><a href="http://try.github.io/">Resources to Learn Git</a></li>
+		<li><a href="https://guides.github.com/introduction/git-handbook/">Git Handbook</a></li>             
+	     </div>
+           );
+         }
+       }
+ 
+       ReactDOM.render(
+         <List />, document.getElementById('reactPractice')
+       );
+    </script>
+  </body>
+</html>
